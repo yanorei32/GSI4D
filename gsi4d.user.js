@@ -60,6 +60,7 @@
 		'stackexchange.com',
 		'stackoverflow.com',
 		'superuser.com',
+		'teratail.com',
 	];
 
 	// 任意のユーザーが使えるサービス。比較的良質な物が多い。
