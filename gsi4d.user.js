@@ -1,7 +1,7 @@
 // ==UserScript==
 // @name		GSI4D - Google search improve for developers
 // @description	Google search improve for developers.
-// @version	 	0.1.1
+// @version	 	0.1.2
 // @include		/^https://www\.google\.co(m|\.jp)/search.+$/
 // @author		yanorei32
 // @supportURL	https://github.com/Yanorei32/GSI4D/issues
@@ -28,6 +28,9 @@
 
 		// RedHat
 		'access.redhat.com/documentation',
+
+		// Docker
+		'hub.docker.com',
 
 		// GitHub
 		'github.com',
