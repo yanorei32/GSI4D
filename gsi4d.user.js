@@ -86,6 +86,8 @@
 		// 画像が多くて嫌い。
 		'techacademy.jp',
 
+		// Google翻訳されたかのような謎文章のサイト。
+		'code.i-harness.com',
 	];
 
 	const changeColor = (link) => {
