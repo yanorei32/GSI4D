@@ -1,7 +1,7 @@
 // ==UserScript==
 // @name		GSI4D - Google search improve for developers
 // @description	Google search improve for developers.
-// @version	 	0.1.8
+// @version	 	0.2.0
 // @include		/^https://www\.google\.co(m|\.jp)/search.+$/
 // @author		yanorei32
 // @supportURL	https://github.com/Yanorei32/GSI4D/issues
@@ -90,40 +90,52 @@
 		'code.i-harness.com',
 	];
 
-	const changeColor = (link) => {
+	const changeColor = (link, log) => {
 		for(const siteDomain of RECOM_LIST)
 			if(link.textContent.indexOf(siteDomain) !== -1) {
 				link.parentElement.parentElement.parentElement.style.backgroundColor = '#eff';
+				log.trackedCount++;
 				return;
 			}
 
 		for(const siteDomain of REFERENCE_LIST)
 			if(link.textContent.indexOf(siteDomain) !== -1){
 				link.parentElement.parentElement.parentElement.style.backgroundColor = '#efe';
+				log.trackedCount++;
 				return;
 			}
 
 		for(const siteDomain of PUBLIC_SERVICE)
 			if(link.textContent.indexOf(siteDomain) !== -1){
 				link.parentElement.parentElement.parentElement.style.backgroundColor = '#ffe';
+				log.trackedCount++;
 				return;
 			}
 
 		for(const siteDomain of RECOM_FORUM)
 			if(link.textContent.indexOf(siteDomain) !== -1){
 				link.parentElement.parentElement.parentElement.style.backgroundColor = '#eee';
+				log.trackedCount++;
 				return;
 			}
 
 		for(const siteDomain of BLACK_LIST)
 			if(link.textContent.indexOf(siteDomain) !== -1){
 				link.parentElement.parentElement.parentElement.style.display = 'none';
+				log.blockedCount++;
 				return;
 			}
 	};
 
-	for(const link of document.getElementsByClassName('TbwUpd'))
-		changeColor(link);
+	const log = {
+		blockedCount: 0,
+		trackedCount: 0,
+	};
 
+	for(const link of document.getElementsByClassName('TbwUpd'))
+		changeColor(link, log);
+
+	document.getElementById('resultStats').textContent += 
+		`GSI4D: Blocked: ${log.blockedCount} Tracked: ${log.trackedCount}`;
 })();
 
