@@ -37,8 +37,8 @@
 		'github.com',
 
 		// Golang
-		'tour.golang.org',
 		'golang.org',
+		'godoc.org',
 
 		// Ruby
 		'ruby-lang.org',
