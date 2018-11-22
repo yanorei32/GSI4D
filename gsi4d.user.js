@@ -38,6 +38,7 @@
 
 		// Golang
 		'tour.golang.org',
+		'golang.org'
 
 		// Ruby
 		'ruby-lang.org',
