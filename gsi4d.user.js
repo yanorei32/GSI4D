@@ -89,6 +89,9 @@
 
 		// Google翻訳されたかのような謎文章のサイト。
 		'code.i-harness.com',
+		
+		// StackExchange等からコピーしGoogle翻訳にかけたサイト。
+		'stackovernet.com',
 	];
 
 	const changeColor = (link, log) => {
