@@ -1,7 +1,7 @@
 // ==UserScript==
 // @name		GSI4D - Google search improve for developers
 // @description	Google search improve for developers.
-// @version		0.2.7
+// @version		0.2.8
 // @include		/^https://www\.google\.co(m|\.jp)/search.+$/
 // @author		yanorei32
 // @supportURL	https://github.com/Yanorei32/GSI4D/issues
@@ -100,6 +100,7 @@
 		// AdSite
 		'solvusoft.com',
 		'reviversoft.com',
+		'jp.dll-files.com',
 	];
 
 	const changeColor = (link, log) => {
