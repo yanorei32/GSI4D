@@ -84,6 +84,9 @@
 	];
 
 	const BLACK_LIST = [
+		// ADBlockerが有効だとコンテンツを見せない
+		'server-setting.info',
+
 		// 侍エンジニア。画像が多くて嫌い。
 		'sejuku.net',
 
