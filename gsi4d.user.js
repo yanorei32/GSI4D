@@ -1,7 +1,7 @@
 // ==UserScript==
 // @name		GSI4D - Google search improve for developers
 // @description	Google search improve for developers.
-// @version		0.4.2
+// @version		0.4.3
 // @include		/^https://www\.google\.co(m|\.jp)/search.+$/
 // @author		yanorei32
 // @supportURL	https://github.com/Yanorei32/GSI4D/issues
@@ -50,7 +50,9 @@
 		// Ruby - gem
 		'rubygems.org',
 
-		// Python - requests
+		// Python
+		'docs.python.jp',
+		'docs.python.org',
 		'requests-docs-ja.readthedocs.io',
 		'python-requests.org',
 	];
