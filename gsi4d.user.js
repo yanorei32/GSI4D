@@ -1,7 +1,7 @@
 // ==UserScript==
 // @name		GSI4D - Google search improve for developers
 // @description	Google search improve for developers.
-// @version		0.2.12
+// @version		0.2.13
 // @include		/^https://www\.google\.co(m|\.jp)/search.+$/
 // @author		yanorei32
 // @supportURL	https://github.com/Yanorei32/GSI4D/issues
@@ -107,6 +107,10 @@
 		'softonic.com',
 		'softonic.jp',
 		'systweak.com',
+		'chip.de',
+		'qpdownload.com',
+		'jaleco.com',
+		'findmysoft.com',
 	];
 
 	const changeColor = (link, log) => {
