@@ -43,11 +43,7 @@
 		// Ruby
 		'ruby-lang.org',
 		'ruby-doc.org',
-
-		// Ruby - Ruby on Rails
 		'railsdoc.com',
-
-		// Ruby - gem
 		'rubygems.org',
 
 		// Python
