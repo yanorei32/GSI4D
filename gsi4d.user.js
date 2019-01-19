@@ -1,7 +1,7 @@
 // ==UserScript==
 // @name		GSI4D - Google search improve for developers
 // @description	Google search improve for developers.
-// @version		0.4.5
+// @version		0.4.6
 // @include		/^https://www\.google\.co(m|\.jp)/search.+$/
 // @author		yanorei32
 // @supportURL	https://github.com/Yanorei32/GSI4D/issues
@@ -54,6 +54,9 @@
 
 		// Raspberry Pi
 		'raspberrypi.org',
+
+		// IPA
+		'ipa.go.jp',
 	];
 
 	const RECOM_LIST = [
