@@ -1,7 +1,7 @@
 // ==UserScript==
 // @name		GSI4D - Google search improve for developers
 // @description	Google search improve for developers.
-// @version		0.4.8
+// @version		0.4.9
 // @include		/^https://www\.google\.co(m|\.jp)/search.+$/
 // @author		yanorei32
 // @supportURL	https://github.com/Yanorei32/GSI4D/issues
@@ -16,6 +16,9 @@
 	'use strict';
 
 	const REFERENCE_LIST = [
+		// Microsoft
+		'windows.com',
+		
 		// Mozilla
 		'developer.mozilla.org',
 
