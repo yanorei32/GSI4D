@@ -107,6 +107,7 @@
 		'techacademy.jp',
 		'programming-study.com',
 		'codecamp.jp',
+		'tadaken3.hatenablog.jp',
 
 		// Google翻訳されたかのような謎文章のサイト。
 		'code.i-harness.com',
