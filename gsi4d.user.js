@@ -1,7 +1,7 @@
 // ==UserScript==
 // @name		GSI4D - Google search improve for developers
 // @description	Google search improve for developers.
-// @version		0.4.13
+// @version		0.4.14
 // @include		/^https://www\.google\.co(m|\.jp)/search.+$/
 // @author		yanorei32
 // @supportURL	https://github.com/Yanorei32/GSI4D/issues
@@ -110,11 +110,12 @@
 		// 侍エンジニア。画像が多くて嫌い。
 		'sejuku.net',
 
-		// 画像が多くて嫌い。
+		// 画像や広告が多くて嫌い。
 		'techacademy.jp',
 		'programming-study.com',
 		'codecamp.jp',
 		'tadaken3.hatenablog.jp',
+		'udemy.benesse.co.jp',
 
 		// Google翻訳されたかのような謎文章のサイト。
 		'code.i-harness.com',
