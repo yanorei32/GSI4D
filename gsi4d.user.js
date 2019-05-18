@@ -1,7 +1,7 @@
 // ==UserScript==
 // @name		GSI4D - Google search improve for developers
 // @description	Google search improve for developers.
-// @version		0.4.12
+// @version		0.4.1
 // @include		/^https://www\.google\.co(m|\.jp)/search.+$/
 // @author		yanorei32
 // @supportURL	https://github.com/Yanorei32/GSI4D/issues
@@ -77,6 +77,9 @@
 		
 		// Win2Kを調べると行き着く。
 		'blog.livedoor.jp/blackwingcat',
+		
+		// Go周りを調べると行き着く。
+		'ashitani.jp/golangtips/',
 	];
 
 	const RECOM_FORUM = [
