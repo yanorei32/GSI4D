@@ -1,7 +1,7 @@
 // ==UserScript==
 // @name		GSI4D - Google search improve for developers
 // @description	Google search improve for developers.
-// @version		0.4.16
+// @version		0.4.17
 // @include		/^https://www\.google\.co(m|\.jp)/search.+$/
 // @author		yanorei32
 // @supportURL	https://github.com/Yanorei32/GSI4D/issues
@@ -68,6 +68,7 @@
 	const RECOM_LIST = [
 		// Web系を調べていると行き着く。
 		'tohoho-web.com',
+		'htmq.com',
 
 		// VBやC#を調べていると行き着く。
 		'dobon.net',
