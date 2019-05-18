@@ -1,7 +1,7 @@
 // ==UserScript==
 // @name		GSI4D - Google search improve for developers
 // @description	Google search improve for developers.
-// @version		0.4.11
+// @version		0.4.12
 // @include		/^https://www\.google\.co(m|\.jp)/search.+$/
 // @author		yanorei32
 // @supportURL	https://github.com/Yanorei32/GSI4D/issues
@@ -86,6 +86,7 @@
 		'superuser.com',
 		'teratail.com',
 		'askubuntu.com',
+		'reddit.com',
 	];
 
 	// 任意のユーザーが使えるサービス。比較的良質な物が多い。
