@@ -1,7 +1,7 @@
 // ==UserScript==
 // @name		GSI4D - Google search improve for developers
 // @description	Google search improve for developers.
-// @version		0.4.14
+// @version		0.4.15
 // @include		/^https://www\.google\.co(m|\.jp)/search.+$/
 // @author		yanorei32
 // @supportURL	https://github.com/Yanorei32/GSI4D/issues
@@ -116,6 +116,7 @@
 		'codecamp.jp',
 		'tadaken3.hatenablog.jp',
 		'udemy.benesse.co.jp',
+		'techplay.jp',
 
 		// Google翻訳されたかのような謎文章のサイト。
 		'code.i-harness.com',
