@@ -1,7 +1,7 @@
 // ==UserScript==
 // @name		GSI4D - Google search improve for developers
 // @description	Google search improve for developers.
-// @version		0.4.19
+// @version		0.4.20
 // @include		/^https://www\.google\.co(m|\.jp)/search.+$/
 // @author		yanorei32
 // @supportURL	https://github.com/Yanorei32/GSI4D/issues
@@ -130,6 +130,7 @@
 		// StackExchange等からコピーしGoogle翻訳にかけたサイト。
 		'stackovernet.com',
 		'stackoverrun.com',
+		'codeday.me',
 
 		// AdSite
 		'solvusoft.com',
