@@ -1,7 +1,7 @@
 // ==UserScript==
 // @name		GSI4D - Google search improve for developers
 // @description	Google search improve for developers.
-// @version		0.4.22
+// @version		0.4.23
 // @include		/^https://www\.google\.co(m|\.jp)/search.+$/
 // @author		yanorei32
 // @supportURL	https://github.com/Yanorei32/GSI4D/issues
@@ -66,6 +66,9 @@
 		
 		// PHP
 		'php.net',
+		
+		// Apache
+		'apache.org',
 	];
 
 	const RECOM_LIST = [
