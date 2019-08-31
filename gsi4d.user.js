@@ -1,7 +1,7 @@
 // ==UserScript==
 // @name		GSI4D - Google search improve for developers
 // @description	Google search improve for developers.
-// @version		0.4.26
+// @version		0.4.27
 // @include		/^https://www\.google\.co(m|\.jp)/search.+$/
 // @author		yanorei32
 // @supportURL	https://github.com/Yanorei32/GSI4D/issues
@@ -69,6 +69,9 @@
 		
 		// Apache
 		'apache.org',
+
+		// Unity 3D
+		'docs.unity3d.com',
 	];
 
 	const RECOM_LIST = [
