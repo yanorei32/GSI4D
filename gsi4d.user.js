@@ -1,7 +1,7 @@
 // ==UserScript==
 // @name		GSI4D - Google search improve for developers
 // @description	Google search improve for developers.
-// @version		0.4.30
+// @version		0.5.0
 // @include		/^https://www\.google\.co(m|\.jp)/search.+$/
 // @author		yanorei32
 // @supportURL	https://github.com/Yanorei32/GSI4D/issues
@@ -18,16 +18,14 @@
 	const REFERENCE_LIST = [
 		// Microsoft
 		'windows.com',
+		'msdn.microsoft.com',
+		'docs.microsoft.com',
 		
 		// Oracle
 		'docs.oracle.com',
 		
 		// Mozilla
 		'developer.mozilla.org',
-
-		// Microsoft
-		'msdn.microsoft.com',
-		'docs.microsoft.com',
 
 		// Google
 		'cloud.google.com',
@@ -221,12 +219,17 @@
 	const resultStatsElem = document.getElementById('resultStats');
 	const isPC = resultStatsElem != null;
 
-	for(const link of document.getElementsByClassName(isPC ? 'TbwUpd' : 'UPmit'))
-		changeColor(link, log, isPC);
-
-	if(isPC)
+	if (!isPC)
+		for(const link of document.getElementsByClassName('UPmit'))
+			changeColor(link, log, isPC);
+	else {
+		for(const link of document.getElementsByClassName('TbwUpd'))
+			if (!link.classList.contains('qks8td'))
+				changeColor(link, log, isPC);
+		
 		resultStatsElem.textContent += 
 			`GSI4D: Blocked: ${log.blockedCount} Tracked: ${log.trackedCount}`;
+	}
 
 })();
 
