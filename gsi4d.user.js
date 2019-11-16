@@ -1,7 +1,7 @@
 // ==UserScript==
 // @name		GSI4D - Google search improve for developers
 // @description	Google search improve for developers.
-// @version		0.7.0
+// @version		0.8.0
 // @include		/^https://www\.google\.co(m|\.jp)/search.+$/
 // @author		yanorei32
 // @supportURL	https://github.com/Yanorei32/GSI4D/issues
@@ -243,7 +243,7 @@
 				const cardSpan = document.createElement('span');
 				const cardText = document.createElement('div');
 
-				cardContainer.classList.add('ZINbbc', 'xpd', 'O9g5cc', 'uUPGi');
+				cardContainer.classList.add('ZINbbc', 'xpd', 'O9g5cc', 'uUPGi', 'gsi4d');
 				card.classList.add('kCrYT');
 				cardText.classList.add('BNeawe', 's3v9rd', 'AP7Wnd');
 				cardText.textContent = formatedLog;
