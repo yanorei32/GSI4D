@@ -1,7 +1,7 @@
 // ==UserScript==
 // @name		GSI4D - Google search improve for developers
 // @description	Google search improve for developers.
-// @version		0.6.0
+// @version		0.7.0
 // @include		/^https://www\.google\.co(m|\.jp)/search.+$/
 // @author		yanorei32
 // @supportURL	https://github.com/Yanorei32/GSI4D/issues
@@ -89,7 +89,7 @@
 
 		recommend: {
 			isBlacklist: false,
-			color: '#EFE',
+			color: '#EFF',
 			list: [
 				// Web系を調べていると行き着く。
 				'tohoho-web.com',
@@ -122,7 +122,7 @@
 		
 		recommendForum: {
 			isBlacklist: false,
-			color: '#EFE',
+			color: '#EEE',
 			list: [
 				'stackexchange.com',
 				'stackoverflow.com',
@@ -136,7 +136,7 @@
 		// 任意のユーザーが使えるサービス。比較的良質な物が多い。
 		publicService: {
 			isBlacklist: false,
-			color: '#EFE',
+			color: '#FFE',
 			list: [
 				'qiita.com',
 			],
