@@ -178,6 +178,7 @@
 				'stackoverrun.com',
 				'codeday.me',
 				'code-examples.net',
+				'code-adviser.com',
 				'kotaeta.com',
 				'tutorialmore.com',
 				'voidcc.com',
