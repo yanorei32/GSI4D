@@ -256,7 +256,6 @@
 				card.appendChild(cardSpan);
 				cardContainer.appendChild(card);
 				document.getElementById('main').childNodes[1].after(cardContainer);
-				console.log(formatedLog);
 			},
 		},
 	};
