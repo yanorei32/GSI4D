@@ -151,6 +151,8 @@
 
 				// 誤った情報を大々的に掲載している。
 				'profession-net.com',
+				'symmetric.co.jp',
+
 				
 				// ADBlockerが有効だとコンテンツを見せない
 				'server-setting.info',
