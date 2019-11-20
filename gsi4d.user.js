@@ -172,6 +172,9 @@
 				'unitopi.com',
 
 				// コピペ(翻訳)サイト
+				'bunnyinside.com',
+				'forsenergy.com',
+				'jp.mytory.net',
 				'phpspot.net/php/man/',
 				'code.i-harness.com',
 				'stackovernet.com',
