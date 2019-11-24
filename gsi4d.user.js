@@ -1,7 +1,7 @@
 // ==UserScript==
 // @name		GSI4D - Google search improve for developers
 // @description	Google search improve for developers.
-// @version		0.8.2
+// @version		0.8.4
 // @include		/^https://www\.google\.co(m|\.jp)/search.+$/
 // @author		yanorei32
 // @supportURL	https://github.com/Yanorei32/GSI4D/issues
@@ -172,6 +172,9 @@
 				'unitopi.com',
 
 				// コピペ(翻訳)サイト
+				'bunnyinside.com',
+				'forsenergy.com',
+				'jp.mytory.net',
 				'phpspot.net/php/man/',
 				'code.i-harness.com',
 				'stackovernet.com',
@@ -256,7 +259,6 @@
 				card.appendChild(cardSpan);
 				cardContainer.appendChild(card);
 				document.getElementById('main').childNodes[1].after(cardContainer);
-				console.log(formatedLog);
 			},
 		},
 	};
