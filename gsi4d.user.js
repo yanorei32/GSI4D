@@ -184,6 +184,7 @@
 				'code-adviser.com',
 				'kotaeta.com',
 				'tutorialmore.com',
+				'it-swarm.net',
 				'voidcc.com',
 
 				// AdSite
