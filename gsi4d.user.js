@@ -170,6 +170,7 @@
 				'furien.jp',
 				'eng-entrance.com',
 				'unitopi.com',
+				'internetacademy.jp',
 
 				// コピペ(翻訳)サイト
 				'bunnyinside.com',
