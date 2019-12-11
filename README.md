@@ -8,5 +8,16 @@ Highlight my favorite high quality sites and **Hide my hate sites**.
 1. Enjoy!
 
 ## Sample
-![image](https://user-images.githubusercontent.com/11992915/63655128-f33bb180-c7be-11e9-81da-0e402098e909.png)
+
+### Search
+![image](https://pbs.twimg.com/media/ELfsEX-UUAAgZ7_.png:small)
+
+### Image Search
+![image](https://pbs.twimg.com/media/ELfsEX9U4AAxdUJ.png:small)
+
+### Video Search
+![image](https://pbs.twimg.com/media/ELfsEWGU4AEPkDa.png:small)
+
+### Phone <small>Android/Firefox required.</small>
+![image](https://pbs.twimg.com/media/EJghfdAUwAA7zYB.png:small)
 
