@@ -1,7 +1,7 @@
 // ==UserScript==
 // @name		GSI4D - Google search improve for developers
 // @description	Google search improve for developers.
-// @version		1.0.0
+// @version		1.0.1
 // @include		/^https://www\.google\.co(m|\.jp)/search.+$/
 // @author		yanorei32
 // @supportURL	https://github.com/Yanorei32/GSI4D/issues
@@ -177,6 +177,7 @@
 				'eng-entrance.com',
 				'unitopi.com',
 				'internetacademy.jp',
+				'kurashi-no.jp',
 
 				// コピペ(翻訳)サイト
 				'bunnyinside.com',
