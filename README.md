@@ -9,15 +9,10 @@ Highlight my favorite high quality sites and **Hide my hate sites**.
 
 ## Sample
 
-### Search
-![image](https://pbs.twimg.com/media/ELfsEX-UUAAgZ7_.png:small)
+|search|image|video|phone|
+|:--|:--|:--|:--|
+|![image](https://pbs.twimg.com/media/ELfsEX-UUAAgZ7_.png:small)|![image](https://pbs.twimg.com/media/ELfsEX9U4AAxdUJ.png:small)|![image](https://pbs.twimg.com/media/ELfsEWGU4AEPkDa.png:small)|![image](https://pbs.twimg.com/media/EJghfdAUwAA7zYB.png:small)|
 
-### Image Search
-![image](https://pbs.twimg.com/media/ELfsEX9U4AAxdUJ.png:small)
-
-### Video Search
-![image](https://pbs.twimg.com/media/ELfsEWGU4AEPkDa.png:small)
-
-### Phone <small>Android/Firefox required.</small>
-![image](https://pbs.twimg.com/media/EJghfdAUwAA7zYB.png:small)
+## Version name
+&lt;MAJOR VERSION&gt;.&lt;ENGINE VERSION&gt;.&lt;DEFINISION VERSION&gt;
 
