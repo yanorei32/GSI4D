@@ -1,7 +1,7 @@
 // ==UserScript==
 // @name		GSI4D - Google search improve for developers
 // @description	Google search improve for developers.
-// @version		1.0.2
+// @version		1.1.2
 // @include		/^https://www\.google\.co(m|\.jp)/search.+$/
 // @author		yanorei32
 // @supportURL	https://github.com/Yanorei32/GSI4D/issues
@@ -241,7 +241,7 @@
 			],
 
 			getLinkElems: (st, parentE) => {
-				if (st === SearchTypes.Image) 
+				if (st === SearchTypes.Image)
 					return parentE.querySelectorAll('div#rg_s>div>div.rg_meta.notranslate');
 
 				return parentE.querySelectorAll('div.r>a:not(.fl)');
@@ -253,7 +253,7 @@
 					return;
 				}
 
-				linkE.parentElement.parentElement.parentElement.parentElement.style.backgroundColor = color;
+				linkE.parentElement.parentElement.parentElement.style.backgroundColor = color;
 			},
 
 			deleteCandidateByLinkElem: (st, linkE) => {
@@ -263,13 +263,13 @@
 				}
 
 				deleteElement(
-					linkE.parentElement.parentElement.parentElement.parentElement
+					linkE.parentElement.parentElement.parentElement
 				);
 			},
 
 			writeLog: (st, formatedLog) => {
 				if (st !== SearchTypes.Image) {
-					document.getElementById('resultStats').innerHTML += formatedLog;
+					document.getElementById('result-stats').innerHTML += formatedLog;
 					return;
 				}
 
@@ -402,7 +402,7 @@
 				return parsedParam[1];
 			}
 
-			return decodeURI(parsedParam[1]); 
+			return decodeURI(parsedParam[1]);
 		}
 
 		console.error('Failed to read URL from /url?: ' + url);
@@ -461,7 +461,7 @@
 			const url = parseLinkElement(st, link);
 			if (url === '')
 				continue linkLoop;
-			
+
 			for (const [_, siteType] of Object.entries(site)) {
 				for (const siteStr of siteType.list) {
 					if (url.indexOf(siteStr) === -1)
