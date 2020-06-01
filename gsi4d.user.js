@@ -159,6 +159,7 @@
 				'mupon.net',
 				'marucoblog.com',
 				'suke-log.com',
+				'proengineer.internous.co.jp',
 
 				// ADBlockerが有効だとコンテンツを見せない
 				'server-setting.info',
