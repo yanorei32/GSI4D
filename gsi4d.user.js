@@ -215,6 +215,9 @@
 				'89139849001.ru',
 				'ukgorod37.ru',
 				'krasota-olimpia.ru',
+				'korobkaoo.ru',
+				'bkrolik.ru',
+				'hockorder.ru',
 			],
 		},
 	};
