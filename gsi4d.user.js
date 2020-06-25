@@ -211,6 +211,7 @@
 				'qpdownload.com',
 				'jaleco.com',
 				'findmysoft.com',
+				'akvatoriyal.ru',
 			],
 		},
 	};
