@@ -1,7 +1,7 @@
 // ==UserScript==
 // @name		GSI4D - Google search improve for developers
 // @description	Google search improve for developers.
-// @version		1.1.8
+// @version		1.2.8
 // @include		/^https://www\.google\.co(m|\.jp)/search.+$/
 // @author		yanorei32
 // @supportURL	https://github.com/Yanorei32/GSI4D/issues
@@ -252,9 +252,9 @@
 
 			getLinkElems: (st, parentE) => {
 				if (st === SearchTypes.Image)
-					return parentE.querySelectorAll('div#rg_s>div>div.rg_meta.notranslate');
+					return parentE.querySelectorAll('a.VFACy.kGQAp.sMi44c.lNHeqe');
 
-				return parentE.querySelectorAll('div.r>a:not(.fl)');
+				return parentE.querySelectorAll('div.g a:not(.fl):not(.GHDvEf)');
 			},
 
 			coloriseCandidateByLinkElem: (st, linkE, color) => {
@@ -278,14 +278,10 @@
 			},
 
 			writeLog: (st, formatedLog) => {
-				if (st !== SearchTypes.Image) {
-					document.getElementById('result-stats').innerHTML += formatedLog;
+				if (st === SearchTypes.Image)
 					return;
-				}
 
-				const div = document.createElement('div');
-				div.textContent = 'GSI4D: Observing...';
-				document.getElementById('topstuff').appendChild(div);
+				document.getElementById('result-stats').innerHTML += formatedLog;
 			},
 
 			after: (st) => {
@@ -299,16 +295,13 @@
 								linkProcess(st, addedNode);
 
 				})).observe(
-					document.getElementById('rg_s'),
+					document.querySelector('.islrc'),
 					{ childList: true },
 				);
 			},
 		},
 		Phone: {
 			supportSearchTypes: [
-				SearchTypes.Default,
-				SearchTypes.Video,
-				SearchTypes.Image,
 			],
 
 			getLinkElems: (st, parentE) => {
@@ -379,7 +372,7 @@
 	};
 
 	const getPageStyle = () => {
-		if (document.getElementById('searchform') === null) {
+		if (window.navigator.userAgent.toLowerCase().indexOf('mobile') !== -1) {
 			console.log('PageStyle: Phone');
 			return pageStyle.Phone;
 		}
@@ -515,7 +508,6 @@
 	linkProcess(currentST, document);
 
 	p.writeLog(currentST, formatGSI4DLog(log));
-
 	p.after(currentST);
 })();
 

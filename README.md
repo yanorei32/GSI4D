@@ -1,6 +1,10 @@
 # GSI4D - Google search improve for developers
 Highlight my favorite high quality sites and **Hide my hate sites**.
 
+## NOTE
+This software is temporarily dropping phone support.
+We have lost a mobile browser with user script support.
+
 ## How to install
 
 1. Install [Tampermonkey](https://www.tampermonkey.net/) to your browser.
