@@ -1,7 +1,7 @@
 // ==UserScript==
 // @name		GSI4D - Google search improve for developers
 // @description	Google search improve for developers.
-// @version		1.2.8
+// @version		1.2.9
 // @include		/^https://www\.google\.co(m|\.jp)/search.+$/
 // @author		yanorei32
 // @supportURL	https://github.com/Yanorei32/GSI4D/issues
@@ -199,6 +199,7 @@
 				'qastack.jp',
 				'coder.work',
 				'it-swarm.dev',
+				'sobrelinux.info',
 
 				// AdSite
 				'solvusoft.com',
