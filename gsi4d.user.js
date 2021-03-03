@@ -179,6 +179,7 @@
 				'unitopi.com',
 				'internetacademy.jp',
 				'kurashi-no.jp',
+				'kokinn.com',
 
 				// コピペ(翻訳)サイト
 				'bunnyinside.com',
