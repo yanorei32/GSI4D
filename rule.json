@@ -1,8 +1,8 @@
 {
   "reference": {
-    "is_blacklist": false,
+    "isBlacklist": false,
     "color": "#EFE",
-    "url": [
+    "list": [
       "windows.com",
       "msdn.microsoft.com",
       "docs.microsoft.com",
@@ -34,9 +34,9 @@
     ]
   },
   "recommend": {
-    "is_blacklist": false,
+    "isBlacklist": false,
     "color": "#EFF",
-    "url": [
+    "list": [
       "tohoho-web.com",
       "htmq.com",
       "jsprimer.net",
@@ -51,9 +51,9 @@
     ]
   },
   "recommendForum": {
-    "is_blacklist": false,
+    "isBlacklist": false,
     "color": "#EEE",
-    "url": [
+    "list": [
       "stackexchange.com",
       "stackoverflow.com",
       "superuser.com",
@@ -64,16 +64,16 @@
     ]
   },
   "publicService": {
-    "is_blacklist": false,
+    "isBlacklist": false,
     "color": "#FFE",
-    "url": [
+    "list": [
       "qiita.com"
     ]
   },
   "blackList": {
-    "is_blacklist": true,
+    "isBlacklist": true,
     "color": null,
-    "url": [
+    "list": [
       "wikiwand.com",
       "employment.en-japan.com",
       "profession-net.com",
