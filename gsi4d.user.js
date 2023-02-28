@@ -1,13 +1,13 @@
 // ==UserScript==
 // @name		GSI4D - Google search improve for developers
 // @description	Google search improve for developers.
-// @version		1.2.10
+// @version		1.3.10
 // @include		/^https://www\.google\.co(m|\.jp)/search.+$/
 // @author		yanorei32
-// @supportURL	https://github.com/Yanorei32/GSI4D/issues
+// @supportURL	https://github.com/yanorei32/GSI4D/issues
 // @website		http://yano.teamfruit.net/~rei/
 // @namespace	http://yano.teamfruit.net/~rei/
-// @updateURL	https://raw.githubusercontent.com/Yanorei32/GSI4D/master/gsi4d.user.js
+// @updateURL	https://raw.githubusercontent.com/yanorei32/GSI4D/master/gsi4d.user.js
 // @license		MIT License
 // @run-at		document-end
 // @grant		none
@@ -19,7 +19,7 @@
 	const site = {
 		reference: {
 			isBlackList: false,
-			color: '#EFE',
+			color: '#0F01',
 			list: [
 				// Microsoft
 				'windows.com',
@@ -89,7 +89,7 @@
 
 		recommend: {
 			isBlacklist: false,
-			color: '#EFF',
+			color: '#0FF1',
 			list: [
 				// Web系を調べていると行き着く。
 				'tohoho-web.com',
@@ -122,7 +122,7 @@
 
 		recommendForum: {
 			isBlacklist: false,
-			color: '#EEE',
+			color: '#3331',
 			list: [
 				'stackexchange.com',
 				'stackoverflow.com',
@@ -137,7 +137,7 @@
 		// 任意のユーザーが使えるサービス。比較的良質な物が多い。
 		publicService: {
 			isBlacklist: false,
-			color: '#FFE',
+			color: '#FF01',
 			list: [
 				'qiita.com',
 			],
