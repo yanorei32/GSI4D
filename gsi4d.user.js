@@ -469,7 +469,8 @@
 
 			for (const [_, siteType] of Object.entries(site)) {
 				for (const siteStr of siteType.list) {
-					if (url.indexOf(siteStr) === -1)
+					const domainRegex = new RegExp('(^|\\.)' + siteStr.replace('.', '\\.') + '$');
+					if (!domainRegex.test(new URL(url).hostname))
 						continue;
 
 					/* found! yay! */
