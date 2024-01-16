@@ -1,7 +1,7 @@
 // ==UserScript==
 // @name		GSI4D - Google search improve for developers
 // @description	Google search improve for developers.
-// @version		1.6.10
+// @version		1.7.10
 // @include		/^https://www\.google\.co(m|\.jp)/search.+$/
 // @author		yanorei32
 // @supportURL	https://github.com/yanorei32/GSI4D/issues
@@ -256,7 +256,7 @@
 				if (st === SearchTypes.Image)
 					return parentE.querySelectorAll('a.VFACy.kGQAp.sMi44c.lNHeqe');
 
-				return [...parentE.querySelectorAll('div.g a:not(.fl):not(.GHDvEf)')].filter(e => !e.parentElement.classList.contains("iHxmLe") && !e.parentElement.classList.contains("HiHjCd"));
+				return [...parentE.querySelectorAll('div.g a:not(.fl):not(.GHDvEf)')].filter(e => !e.parentElement.classList.contains("iHxmLe") && !e.parentElement.classList.contains("HiHjCd") && !e.parentElement.classList.contains("YkS8D"));
 			},
 
 			coloriseCandidateByLinkElem: (st, linkE, color) => {
