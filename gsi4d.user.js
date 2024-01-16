@@ -1,7 +1,7 @@
 // ==UserScript==
 // @name		GSI4D - Google search improve for developers
 // @description	Google search improve for developers.
-// @version		1.4.10
+// @version		1.5.10
 // @include		/^https://www\.google\.co(m|\.jp)/search.+$/
 // @author		yanorei32
 // @supportURL	https://github.com/yanorei32/GSI4D/issues
@@ -287,19 +287,28 @@
 			},
 
 			after: (st) => {
-				if (st !== SearchTypes.Image)
-					return;
-
-				(new MutationObserver(( records ) => {
-					for (const record of records)
-						for (const addedNode of record.addedNodes)
-							if (addedNode.nodeType == Node.ELEMENT_NODE)
-								linkProcess(st, addedNode);
-
-				})).observe(
-					document.querySelector('.islrc'),
-					{ childList: true },
-				);
+				if (st === SearchTypes.Image)
+					(new MutationObserver(( records ) => {
+						for (const record of records)
+							for (const addedNode of record.addedNodes)
+								if (addedNode.nodeType == Node.ELEMENT_NODE)
+									linkProcess(st, addedNode);
+	
+					})).observe(
+						document.querySelector('.islrc'),
+						{ childList: true },
+					);
+				if (st === SearchTypes.Default)
+					(new MutationObserver(( records ) => {
+						for (const record of records)
+							for (const addedNode of record.addedNodes)
+								if (addedNode.nodeType == Node.ELEMENT_NODE)
+									linkProcess(st, addedNode);
+	
+					})).observe(
+						document.querySelector('.WtZO4e'),
+						{ subtree: true, childList: true },
+					);
 			},
 		},
 		Phone: {
