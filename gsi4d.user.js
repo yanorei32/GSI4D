@@ -1,7 +1,7 @@
 // ==UserScript==
 // @name		GSI4D - Google search improve for developers
 // @description	Google search improve for developers.
-// @version		1.5.10
+// @version		1.6.10
 // @include		/^https://www\.google\.co(m|\.jp)/search.+$/
 // @author		yanorei32
 // @supportURL	https://github.com/yanorei32/GSI4D/issues
@@ -256,7 +256,7 @@
 				if (st === SearchTypes.Image)
 					return parentE.querySelectorAll('a.VFACy.kGQAp.sMi44c.lNHeqe');
 
-				return parentE.querySelectorAll('div.g a:not(.fl):not(.GHDvEf)');
+				return [...parentE.querySelectorAll('div.g a:not(.fl):not(.GHDvEf)')].filter(e => !e.parentElement.classList.contains("iHxmLe") && !e.parentElement.classList.contains("HiHjCd"));
 			},
 
 			coloriseCandidateByLinkElem: (st, linkE, color) => {
@@ -293,7 +293,7 @@
 							for (const addedNode of record.addedNodes)
 								if (addedNode.nodeType == Node.ELEMENT_NODE)
 									linkProcess(st, addedNode);
-	
+
 					})).observe(
 						document.querySelector('.islrc'),
 						{ childList: true },
@@ -304,7 +304,7 @@
 							for (const addedNode of record.addedNodes)
 								if (addedNode.nodeType == Node.ELEMENT_NODE)
 									linkProcess(st, addedNode);
-	
+
 					})).observe(
 						document.querySelector('.WtZO4e'),
 						{ subtree: true, childList: true },
@@ -479,6 +479,8 @@
 			for (const [_, siteType] of Object.entries(site)) {
 				for (const siteStr of siteType.list) {
 					const domainRegex = new RegExp('(^|\\.)' + siteStr.replace('.', '\\.') + '$');
+					if (url == "#") continue;
+
 					if (!domainRegex.test(new URL(url).hostname))
 						continue;
 
